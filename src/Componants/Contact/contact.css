@@ -1,0 +1,63 @@
+
+@media (max-width: 991px) {
+  #contact {
+    padding: 70px 0;
+  }
+
+  #contact h2 {
+    font-size: 34px;
+  }
+
+  #contact p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  #contact {
+    padding: 60px 0;
+  }
+
+  #contact h2 {
+    font-size: 28px;
+  }
+
+  #contact .text-center p {
+    padding: 0 10px;
+  }
+
+  #contact .card {
+    padding: 24px !important;
+  }
+
+  #contact h3 {
+    text-align: center;
+  }
+
+  #contact .btn-dark {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #contact .form-label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact h2 {
+    font-size: 24px;
+  }
+
+  #contact p {
+    font-size: 14px;
+  }
+
+  #contact .card {
+    padding: 20px !important;
+  }
+
+  /* #contact textarea {
+    rows: 4;
+  } */
+}

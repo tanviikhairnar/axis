@@ -1,0 +1,24 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.navbar {
+  background-color: #ffffff;
+}
+
+.navbar-brand {
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: #444 !important;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+  color: #7d7d7d !important;
+}
+
