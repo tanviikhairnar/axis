@@ -9,11 +9,12 @@ import PortfolioSection from './Componants/PortfolioSection/PortfolioSection.jsx
 import Team from './Componants/Team/Team.jsx'
 import Contact from './Componants/Contact/Contact.jsx'
 import Footer from './Componants/Footer/Footer.jsx';
+import Ecommerce from './Componants/ecommerce/Ecommerce.jsx';
 
 import './App.css';
 
 function App() {
-  return (
+  return (  
     <>
       <Nav />
       <HomeSection />
@@ -24,6 +25,7 @@ function App() {
       <Team />
       <Contact />
       <Footer/>
+      <Ecommerce />
     </>
   );
 }

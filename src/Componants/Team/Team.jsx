@@ -3,7 +3,7 @@ import { Container, Row, Col, Modal, Button, Form } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 
-import useLocalStorage from "../../hooks/localstorage";
+import useLocalStorage from "../../hooks/UseLocalstorage";
 import TeamCard from "./TamCard";
 import TestimonialCard from "./TestimonialCard";
 
@@ -261,4 +261,5 @@ function Team() {
 }
 
 export default Team;
+
 

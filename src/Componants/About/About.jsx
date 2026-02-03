@@ -33,7 +33,7 @@ const Counter = ({ end, duration = 2000 }) => {
 const About = () => {
   return (
     <section id="about" className="about-section">
-      <Container >
+      <Container fluid >
         <div className="text-center mb-5">
           <small className="text-uppercase text-muted letter-spacing">
             ABOUT

@@ -1,39 +1,37 @@
-function TeamCard({ member, socials, index, onDelete }) {
+import { Card, Button } from "react-bootstrap";
+
+function TeamCard({ member, socials, onDelete }) {
   return (
-    <div className="team-card text-center h-100 position-relative">
-      <button
-        className="btn btn-sm btn-danger position-absolute top-0 end-0 m-2"
-        onClick={() => onDelete(index)}
-        aria-label="Delete team member"
-      >
-        ✕
-      </button>
-
-      <div className="team-img-wrapper">
-        <img
+    <Card className="h-100 text-center">
+      {member.image && (
+        <Card.Img
+          variant="top"
           src={member.image}
-          alt={member.name}
-          className="img-fluid team-img"
+          style={{ height: "250px", objectFit: "cover" }}
         />
-      </div>
+      )}
 
-      <div className="team-content pt-4">
-        <h5 className="mb-1">{member.name}</h5>
-        <small className="text-muted d-block mb-3">{member.role}</small>
+      <Card.Body>
+        <Card.Title>{member.name}</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">
+          {member.role}
+        </Card.Subtitle>
+        <Card.Text>{member.description}</Card.Text>
 
-        <p className="text-muted small px-3">
-          {member.description}
-        </p>
-
-        <div className="team-socials">
-          <a href="#"><img src={socials.twitter} alt="twitter" /></a>
-          <a href="#"><img src={socials.linkedin} alt="linkedin" /></a>
-          <a href="#"><img src={socials.github} alt="github" /></a>
+        <div className="d-flex justify-content-center gap-3 mb-3">
+          <img src={socials.twitter} width={20} />
+          <img src={socials.linkedin} width={20} />
+          <img src={socials.github} width={20} />
         </div>
-      </div>
-    </div>
+
+        <Button variant="danger" size="sm" onClick={onDelete}>
+          Delete
+        </Button>
+      </Card.Body>
+    </Card>
   );
 }
 
 export default TeamCard;
+
 

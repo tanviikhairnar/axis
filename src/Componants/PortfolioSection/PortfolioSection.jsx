@@ -12,7 +12,7 @@ import cardImage6 from "../../assets/portfolio-4.webp";
 const portfolioCards = [
   {
     image: cardImage1,
-    category: "Digital Design",
+    category: "Digital Design", 
     title: "Enterprise Digital Platform",
     client: "Fortune 500 Company",
     description:
